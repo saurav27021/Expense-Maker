@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Expense Maker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex">
+    <!-- Sidebar -->
+    <div class="w-64 bg-blue-600 text-white min-h-screen p-5">
+        <h2 class="text-2xl font-bold">Expense Maker</h2>
+        <ul class="mt-6 space-y-4">
+            <li><a href="dashboard.html" class="block py-2">Dashboard</a></li>
+            <li><a href="add-expense.html" class="block py-2">Add Expense</a></li>
+            <li><a href="profile.html" class="block py-2">Profile</a></li>
+            <li><a href="index.html" class="block py-2">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1 p-6">
+        <h1 class="text-3xl font-bold">Dashboard</h1>
+        <div class="mt-6">
+            <a href="add-expense.html" class="bg-green-500 text-white px-4 py-2 rounded">+ Add Expense</a>
+        </div>
+        <table class="w-full mt-4 bg-white shadow-md rounded">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="p-3">Date</th>
+                    <th class="p-3">Category</th>
+                    <th class="p-3">Amount</th>
+                    <th class="p-3">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="p-3">2025-03-25</td>
+                    <td class="p-3">Food</td>
+                    <td class="p-3">$20</td>
+                    <td class="p-3">
+                        <button class="bg-red-500 text-white px-3 py-1 rounded">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
